@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  example:
+    image: node:18.18.0
+    ports:
+      - '3000:3000'
+    command: "/bin/bash -c 'npx create-next-app@latest nextjs-blog --use-npm --example \"https://github.com/vercel/next-learn/tree/main/basics/learn-starter\" && cd nextjs-blog && npm install && npm run dev'"
